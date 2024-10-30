@@ -7,7 +7,7 @@ const Appointment = () => {
   const { docId } = useParams();
   const { doctors, currencySymbol } = useContext(AppContext);
   const daysOfWeek = ['SUN', 'MON', 'TUE', 'WED', 'THU', 'FRI', 'SAT'];
-  
+
   const [docInfo, setDocInfo] = useState(null);
   const [loading, setLoading] = useState(true); // Loading state
   const [docSlots, setDocSlots] = useState([]); // Initialize slots
@@ -93,7 +93,7 @@ const Appointment = () => {
             alt={docInfo.name || "Doctor's profile picture"} // Ensure meaningful alt text
           />
         </div>
-        <div className='flex-1 border border-grey-400 rounded-lg p-8 py-7 bg-white mx-2 sm:mx-0'>
+        <div className='flex-1 border border-gray-400 rounded-lg p-8 py-7 bg-white mx-2 sm:mx-0'>
           {/* -----doc info---- */}
           <p className='flex items-center gap-2 text-2xl font-medium text-gray-900'>
             {docInfo.name}
@@ -112,9 +112,8 @@ const Appointment = () => {
             </p>
             <p className='text-sm text-gray-500 max-w-[700px] mt-1'>{docInfo.about}</p>
           </div>
-
-          <p className='text-gray-500 font-medium mt-4'> 
-            Appointment fee: <span className='text-gray-600'>{currencySymbol}{docInfo.fees}</span>  
+          <p className='text-gray-500 font-medium mt-4'>
+            Appointment fee: <span className='text-gray-600'>{currencySymbol}{docInfo.fees}</span>
           </p>
         </div>
       </div>
@@ -153,3 +152,4 @@ const Appointment = () => {
 }
 
 export default Appointment;
+
