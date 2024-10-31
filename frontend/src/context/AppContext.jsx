@@ -5,7 +5,10 @@ export const AppContext = createContext()
 
 const AppContextProvider= (props) => {
 
+>>>>>main
+
     const currencySymbol = '$'
+
 
 
     const value = {
