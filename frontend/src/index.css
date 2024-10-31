@@ -12,6 +12,17 @@
     @apply block
 }
 
-::-webkit-scrollbar{
-    @apply hidden
+/* Completely hide the scrollbar */
+::-webkit-scrollbar {
+    width: 0px;
+    height: 0px;
 }
+
+.no-scrollbar::-webkit-scrollbar {
+    display: none;
+  }
+  
+  .no-scrollbar {
+    -ms-overflow-style: none; /* IE and Edge */
+    scrollbar-width: none; /* Firefox */
+  }
