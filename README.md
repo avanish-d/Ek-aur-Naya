@@ -1,2 +1,2 @@
-# Ek-aur-Naya
+# PRESCRIPTO
 Is baar to phod denge
